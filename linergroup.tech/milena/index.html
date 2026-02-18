@@ -3,12 +3,13 @@
 
 
 <!-- Mirrored from linergroup.tech/milena/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Feb 2026 07:07:05 GMT -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IUP MILENA - Excellence & Innovation</title>
     <meta name="description"
-        content="L'Institut Universitaire Polytechnique MILENA forme les leaders de demain grâce à un modèle pédagogique innovant et le système Dual (70% pratique / 30% théorie).">
+        content="L'Institut Universitaire Polytechnique MILENA forme les leaders de demain grâce à un modèle pédagogique innovant et le système Dual (30% théorie / 70% pratique).">
 
     <!-- Google Fonts - Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
@@ -23,6 +24,8 @@
 
     <!-- Styles CSS -->
     <link rel="stylesheet" href="assets/css/animations.html">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
         :root {
@@ -162,12 +165,12 @@
             border-radius: 10px;
             font-weight: 700;
             transition: all 0.3s ease-in-out;
-            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+            box-shadow: none;
         }
 
         .btn-admission:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(255, 107, 53, 0.5);
+            box-shadow: none;
         }
 
         /* Barre de recherche */
@@ -895,6 +898,39 @@
             padding: 80px 0 30px;
         }
 
+        /* Swiper Custom Styles */
+        .formations-slider {
+            padding: 20px 20px 60px;
+            margin: 0 -20px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: var(--blue-color);
+            background: var(--white-color);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            background: var(--blue-color);
+            color: var(--white-color);
+        }
+
+        .swiper-pagination-bullet-active {
+            background: var(--orange-color);
+        }
+
         footer h5 {
             font-weight: 700;
             margin-bottom: 1.5rem;
@@ -1072,18 +1108,25 @@
                             Formations
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="formation1.html">Technologies Numériques (TSN)</a></li>
-                            <li><a class="dropdown-item" href="formation2.html">Environnement & Durable (IEDD)</a></li>
-                            <li><a class="dropdown-item" href="formation3.html">Bâtiments & Construction (IBC)</a></li>
-                            <li><a class="dropdown-item" href="formation4.html">Agrobusiness (AIC)</a></li>
-                            <li><a class="dropdown-item" href="formation5.html">Logistique & Transport (LTES)</a></li>
-                            <li><a class="dropdown-item" href="formation6.html">Artisanat & Art (IAA)</a></li>
-                            <li><a class="dropdown-item" href="formation7.html">Hôtellerie & Tourisme (HRE)</a></li>
+                            <li><a class="dropdown-item" href="formation1.html">TSN : Technologies & Solutions
+                                    Numériques</a></li>
+                            <li><a class="dropdown-item" href="formation2.html">IEDD : Ingénierie de l'Environnement et
+                                    Développement Durable</a></li>
+                            <li><a class="dropdown-item" href="formation3.html">IBC : Ingénierie de Bâtiments et
+                                    Construction</a></li>
+                            <li><a class="dropdown-item" href="formation4.html">AIC : Agrobusiness et Ingénierie
+                                    Coopérative</a></li>
+                            <li><a class="dropdown-item" href="formation5.html">LTES : Logistique, Transport et Économie
+                                    des Services</a></li>
+                            <li><a class="dropdown-item" href="formation6.html">IAA : Industrie Artisanale et
+                                    Artistique</a></li>
+                            <li><a class="dropdown-item" href="formation7.html">HRE : Hôtellerie, Restauration et
+                                    Écotourisme</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="actualites.html">Actualités</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="vie-etudiant.html">Vie étudiante</a>
                     </li>
@@ -1121,23 +1164,26 @@
                     <div class="hero-content">
                         <h1 class="hero-title m-0">
                             Bienvenue à <br>
-                            <span class="highlight">l’IUP MILENA</span>
+                            <span class="highlight">l’IUP MILENA.</span>
                         </h1>
                         <p>Former aujourd’hui les leaders, entrepreneurs et innovateurs de demain.</p>
                         <p class="hero-text">
                             <strong class="text-blue fw-bold">À MILENA</strong>
-                            nous préparons une nouvelle génération de professionnels grâce à une formation pratique, orientée métiers et innovation, fondée sur le système dual et l’excellence académique.
+                            nous préparons une nouvelle génération de professionnels grâce à une formation pratique,
+                            orientée métiers et innovation, fondée sur le système dual et l’excellence académique.
                         </p>
-                        <p class="hero-text m-0">
-                            <strong>Filières mises en avant </strong><br>
-                            <ul class="text-muted">
-                                <li>Technologies & Solutions Numériques (TSN)</li>
-                                <li>Agrobusiness & Ingénierie Coopérative (AIC)</li>
-                                <li>Hôtellerie, Restauration & Écotourisme (HRE)</li>
-                                <li>concevoir et suivre des projets environnementaux ;</li>
-                            </ul>
+                        <p class="hero-text">
+                            <strong>Filières mises en avant.</strong><br>
+                        </p>
+                        <ul class="text-muted">
+                            <li>Technologies & Solutions Numériques (TSN)</li>
+                            <li>Agrobusiness & Ingénierie Coopérative (AIC)</li>
+                            <li>HRE : Hôtellerie, Restauration et Écotourisme</li>
+                            <li>Concevoir et suivre des projets environnementaux.</li>
+                        </ul>
 
-                            <em><span class="text-orange fw-bold">MILENA, apprendre autrement pour réussir durablement.</span></em>
+                        <em><span class="text-orange fw-bold">MILENA, apprendre autrement pour réussir
+                                durablement.</span></em>
                         </p>
                         <div class="d-flex flex-wrap gap-3">
                             <button class="btn-primary-custom" onclick="window.location.href='apropos.html'">
@@ -1164,33 +1210,33 @@
         <div class="container">
             <div class="row text-center mb-5">
                 <div class="col-12">
-                    <h2 class="stats-title">Le Modèle IUP MILENA</h2>
-                    <p class="stats-subtitle">Une approche révolutionnaire pour l'employabilité en Afrique</p>
+                    <h2 class="stats-title">Le modèle IUP MILENA.</h2>
+                    <p class="stats-subtitle">Une approche révolutionnaire pour l'employabilité en Afrique.</p>
                 </div>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
                     <div class="stat-card">
-                        <div class="stat-number">70%</div>
-                        <div class="stat-label">Pratique en Entreprise</div>
+                        <div class="stat-number">30%</div>
+                        <div class="stat-label">Théorie en salle.</div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="stat-card">
-                        <div class="stat-number">30%</div>
-                        <div class="stat-label">Théorie en Salle</div>
+                        <div class="stat-number">70%</div>
+                        <div class="stat-label">Pratique en entreprise.</div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="stat-card">
                         <div class="stat-number">7</div>
-                        <div class="stat-label">Filières d'Avenir</div>
+                        <div class="stat-label">Filières d'avenir.</div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="stat-card">
                         <div class="stat-number">5</div>
-                        <div class="stat-label">Piliers DRIVEn</div>
+                        <div class="stat-label">Piliers DRIVEn.</div>
                     </div>
                 </div>
             </div>
@@ -1201,8 +1247,8 @@
     <section class="points-forts-section">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-title">Pourquoi choisir IUP MILENA ?</h2>
-                <p class="section-subtitle">Millénium pour le Leadership et l’Entreprenariat en Afrique</p>
+                <h2 class="section-title">Pourquoi choisir IUP MILENA.</h2>
+                <p class="section-subtitle">Millénium pour le Leadership et l’Entrepreneuriat en Afrique.</p>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
@@ -1210,9 +1256,19 @@
                         <div class="feature-icon">
                             <i class="bi bi-briefcase-fill"></i>
                         </div>
-                        <h5 class="feature-title">Système Dual</h5>
-                        <p class="feature-text">Formation alliant théorie et immersion professionnelle dès le 2nd
-                            semestre pour une employabilité maximale.</p>
+                        <h5 class="feature-title">Système Dual.</h5>
+                        <p class="feature-text">Un modèle d'apprentissage équilibré entre 30% de théorie et 70% de
+                            pratique.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h5 class="feature-title">Compétences de vie et Leadership.</h5>
+                        <p class="feature-text">Une formation qui va au-delà de l'académique pour forger le caractère et
+                            les capacités de direction.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
@@ -1220,29 +1276,19 @@
                         <div class="feature-icon">
                             <i class="bi bi-lightbulb-fill"></i>
                         </div>
-                        <h5 class="feature-title">Pédagogie DRIVEn</h5>
-                        <p class="feature-text">Déprogrammation, Reprogrammation et Innovations par le Volontariat pour
-                            l’Entreprenariat.</p>
+                        <h5 class="feature-title">Pédagogie DRIVEn.</h5>
+                        <p class="feature-text">Alliant excellence académique et immersion professionnelle
+                            pour transformer les étudiants en "bâtisseurs".</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="feature-card fade-in">
                         <div class="feature-icon">
-                            <i class="bi bi-translate"></i>
+                            <i class="bi bi-award-fill"></i>
                         </div>
-                        <h5 class="feature-title">Bilinguisme & TIC</h5>
-                        <p class="feature-text">Maîtrise de l'anglais des affaires et des outils numériques de pointe
-                            pour s'ouvrir au monde.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <i class="bi bi-heart-fill"></i>
-                        </div>
-                        <h5 class="feature-title">Valeurs & Leadership</h5>
-                        <p class="feature-text">Développement de compétences de vie : intégrité, discipline, endurance
-                            et service à la communauté.</p>
+                        <h5 class="feature-title">Objectif "01 Formation, 01 Emploi ou 01 Entreprise".</h5>
+                        <p class="feature-text">Une promesse de résultat concret visant l'insertion professionnelle
+                            directe ou l'entrepreneuriat.</p>
                     </div>
                 </div>
             </div>
@@ -1253,81 +1299,97 @@
     <section class="formations-section">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-title">Nos Filières de Formation</h2>
-                <p class="section-subtitle">Licence & Master Professionnels</p>
+                <h2 class="section-title">Nos filières de formation.</h2>
+                <p class="section-subtitle">Licence & master professionnels.</p>
             </div>
-            <div class="row g-4">
-                <!-- TSN -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="formation-card fade-in">
-                        <div class="formation-icon-wrapper">
-                            <i class="bi bi-laptop"></i>
-                        </div>
-                        <h5 class="formation-title">Technologies & Solutions Numériques (TSN)</h5>
-                        <p class="formation-text">Développement logiciel, Réseaux, et solutions digitales pour
-                            l'Afrique.</p>
-                        <a href="#" class="btn-formation">Découvrir</a>
-                    </div>
-                </div>
-                <!-- IEDD -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="formation-card fade-in">
-                        <div class="formation-icon-wrapper">
-                            <i class="bi bi-recycle"></i>
-                        </div>
-                        <h5 class="formation-title">Environnement & Dév. Durable (IEDD)</h5>
-                        <p class="formation-text">Ingénierie écologique, gestion des déchets et économie verte.</p>
-                        <a href="#" class="btn-formation">Découvrir</a>
-                    </div>
-                </div>
-                <!-- IBC -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="formation-card fade-in">
-                        <div class="formation-icon-wrapper">
-                            <i class="bi bi-buildings"></i>
-                        </div>
-                        <h5 class="formation-title">Bâtiments & Construction (IBC)</h5>
-                        <p class="formation-text">Génie civil moderne, architecture durable et construction.</p>
-                        <a href="#" class="btn-formation">Découvrir</a>
-                    </div>
-                </div>
-                <!-- AIC -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="formation-card fade-in">
-                        <div class="formation-icon-wrapper">
-                            <i class="bi bi-tree"></i>
-                        </div>
-                        <h5 class="formation-title">Agrobusiness (AIC)</h5>
-                        <p class="formation-text">Ingénierie coopérative, transformation agricole et entrepreneuriat
-                            rural.</p>
-                        <a href="#" class="btn-formation">Découvrir</a>
-                    </div>
-                </div>
-                <!-- LTES -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="formation-card fade-in">
-                        <div class="formation-icon-wrapper">
-                            <i class="bi bi-truck"></i>
-                        </div>
-                        <h5 class="formation-title">Logistique & Transport (LTES)</h5>
-                        <p class="formation-text">Supply chain, économie des services et gestion des transports.</p>
-                        <a href="#" class="btn-formation">Découvrir</a>
-                    </div>
-                </div>
-                <!-- IAA & HRE (Combined or Link) -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="formation-card formation-card-special fade-in">
-                        <div class="card-body">
-                            <i class="bi bi-grid-fill"></i>
-                            <h5>Et bien plus...</h5>
-                            <p class="text-white mb-4">Industrie Artisanale (IAA) <br> Hôtellerie & Ecotourisme (HRE)
-                            </p>
-                            <button class="btn-decouvrir" onclick="window.location.href='#'">
-                                Tout voir
-                            </button>
+            <div class="swiper formations-slider">
+                <div class="swiper-wrapper">
+                    <!-- TSN -->
+                    <div class="swiper-slide">
+                        <div class="formation-card">
+                            <div class="formation-icon-wrapper">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h5 class="formation-title">Technologies & solutions numériques (TSN).</h5>
+                            <p class="formation-text">Développement logiciel, réseaux, et solutions digitales pour
+                                l'Afrique.</p>
+                            <a href="formation1.html" class="btn-formation">Découvrir</a>
                         </div>
                     </div>
+                    <!-- IEDD -->
+                    <div class="swiper-slide">
+                        <div class="formation-card">
+                            <div class="formation-icon-wrapper">
+                                <i class="bi bi-recycle"></i>
+                            </div>
+                            <h5 class="formation-title">Environnement & dév. durable (IEDD).</h5>
+                            <p class="formation-text">Ingénierie écologique, gestion des déchets et économie verte.</p>
+                            <a href="formation2.html" class="btn-formation">Découvrir</a>
+                        </div>
+                    </div>
+                    <!-- IBC -->
+                    <div class="swiper-slide">
+                        <div class="formation-card">
+                            <div class="formation-icon-wrapper">
+                                <i class="bi bi-buildings"></i>
+                            </div>
+                            <h5 class="formation-title">Bâtiments & construction (IBC).</h5>
+                            <p class="formation-text">Génie civil moderne, architecture durable et construction.</p>
+                            <a href="formation3.html" class="btn-formation">Découvrir</a>
+                        </div>
+                    </div>
+                    <!-- AIC -->
+                    <div class="swiper-slide">
+                        <div class="formation-card">
+                            <div class="formation-icon-wrapper">
+                                <i class="bi bi-tree"></i>
+                            </div>
+                            <h5 class="formation-title">AIC : agrobusiness et ingénierie coopérative.</h5>
+                            <p class="formation-text">Ingénierie coopérative, transformation agricole et entrepreneuriat
+                                rural.</p>
+                            <a href="formation4.html" class="btn-formation">Découvrir</a>
+                        </div>
+                    </div>
+                    <!-- LTES -->
+                    <div class="swiper-slide">
+                        <div class="formation-card">
+                            <div class="formation-icon-wrapper">
+                                <i class="bi bi-truck"></i>
+                            </div>
+                            <h5 class="formation-title">Logistique & transport (LTES).</h5>
+                            <p class="formation-text">Supply chain, économie des services et gestion des transports.</p>
+                            <a href="formation5.html" class="btn-formation">Découvrir</a>
+                        </div>
+                    </div>
+                    <!-- IAA -->
+                    <div class="swiper-slide">
+                        <div class="formation-card">
+                            <div class="formation-icon-wrapper">
+                                <i class="bi bi-palette"></i>
+                            </div>
+                            <h5 class="formation-title">Industrie artisanale et artistique (IAA).</h5>
+                            <p class="formation-text">Valorisation des savoir-faire artisanaux et artistiques par des
+                                approches modernes.</p>
+                            <a href="formation6.html" class="btn-formation">Découvrir</a>
+                        </div>
+                    </div>
+                    <!-- HRE -->
+                    <div class="swiper-slide">
+                        <div class="formation-card">
+                            <div class="formation-icon-wrapper">
+                                <i class="bi bi-cup-hot"></i>
+                            </div>
+                            <h5 class="formation-title">Hôtellerie, restauration et écotourisme (HRE).</h5>
+                            <p class="formation-text">Gestion hôtelière, restauration et développement touristique
+                                durable.</p>
+                            <a href="formation7.html" class="btn-formation">Découvrir</a>
+                        </div>
+                    </div>
                 </div>
+                <!-- Pagination & Nav -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next d-none d-lg-flex"></div>
+                <div class="swiper-button-prev d-none d-lg-flex"></div>
             </div>
         </div>
     </section>
@@ -1336,7 +1398,7 @@
     <section class="partners-section">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-title">Nos Partenaires</h2>
+                <h2 class="section-title">Nos partenaires.</h2>
                 <p class="section-subtitle">Ils nous font confiance et contribuent à notre excellence.</p>
             </div>
 
@@ -1349,23 +1411,19 @@
                     </div>
 
                     <div class="partner-item">
-                        <img src="assets/img/partner/linergroup.jpg"
-                            alt="Liner Group">
+                        <img src="assets/img/partner/linergroup.jpg" alt="Liner Group">
                     </div>
 
                     <div class="partner-item">
-                        <img src="assets/img/partner/itisa.jpg"
-                            alt="ITISA">
+                        <img src="assets/img/partner/itisa.jpg" alt="ITISA">
                     </div>
 
                     <div class="partner-item">
-                        <img src="assets/img/partner/ana.jpg"
-                            alt="YoupiLab">
+                        <img src="assets/img/partner/ana.jpg" alt="YoupiLab">
                     </div>
 
                     <div class="partner-item">
-                        <img src="assets/img/partner/aventis.jpg"
-                            alt="Google">
+                        <img src="assets/img/partner/aventis.jpg" alt="Google">
                     </div>
 
 
@@ -1379,13 +1437,11 @@
                     </div>
 
                     <div class="partner-item">
-                        <img src="assets/img/partner/ireti.png"
-                            alt="Liner Group">
+                        <img src="assets/img/partner/ireti.png" alt="Liner Group">
                     </div>
 
                     <div class="partner-item">
-                        <img src="assets/img/partner/siliscon%20sarl.png"
-                            alt="Microsoft">
+                        <img src="assets/img/partner/siliscon%20sarl.png" alt="Microsoft">
                     </div>
 
                     <div class="partner-item">
@@ -1393,8 +1449,7 @@
                     </div>
 
                     <div class="partner-item">
-                        <img src="assets/img/partner/compassion.png"
-                            alt="Google">
+                        <img src="assets/img/partner/compassion.png" alt="Google">
                     </div>
 
                 </div>
@@ -1407,8 +1462,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <h5>IUP MILENA</h5>
-                    <p>Millénium pour le Leadership et l’Entreprenariat en Afrique. Former des bâtisseurs pour l'avenir.
+                    <h5>IUP MILENA.</h5>
+                    <p>IUP MILENA, Former des leaders, des entrepreneurs et des innovateurs pour l’Afrique
                     </p>
                     <div class="social-links mt-4">
                         <a href="#"><i class="bi bi-facebook"></i></a>
@@ -1417,21 +1472,21 @@
                         <a href="#"><i class="bi bi-instagram"></i></a>
                     </div>
                     <div class="mt-3 text-white-50">
-                        <p class="mb-1"><i class="bi bi-geo-alt me-2"></i>Abomey-Calavi, Zopah / Tankpè</p>
-                        <p class="mb-1"><i class="bi bi-telephone me-2"></i>+229 95 73 39 72</p>
-                        <p class="mb-1"><i class="bi bi-envelope me-2"></i>contact@iup-milena.bj</p>
+                        <p class="mb-1"><i class="bi bi-geo-alt me-2"></i><a href="https://maps.app.goo.gl/u5kUjBPr3KWrajK37" target="_blank" style="color: inherit; text-decoration: none;">Abomey-Calavi, Zopah / Tankpè</a>.</p>
+                        <p class="mb-1"><i class="bi bi-telephone me-2"></i>+229 01 90 62 62 84</p>
+                        <p class="mb-1"><i class="bi bi-envelope me-2"></i>iup.milena.itisa@gmail.com</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>L'Institut</h5>
+                    <h5>L'institut.</h5>
                     <ul class="list-unstyled">
                         <li><a href="index-2.html">Accueil</a></li>
                         <li><a href="apropos.html">À propos (ITISA)</a></li>
-                        <li><a href="#">Nos Formations</a></li>
+                        <li><a href="#">Nos formations</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>Services</h5>
+                    <h5>Services.</h5>
                     <ul class="list-unstyled">
                         <li><a href="vie-etudiant.html">Vie étudiante</a></li>
                         <li><a href="contacts.html">Contacts</a></li>
@@ -1439,8 +1494,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-4 mb-4">
-                    <h5>Newsletter</h5>
-                    <p>Restez informé de nos dernières actualités</p>
+                    <h5>Restez informé(e) de nos dernières actualités.</h5>
                     <form class="newsletter-form">
                         <input type="email" placeholder="Votre email">
                         <button type="submit">S'abonner</button>
@@ -1450,7 +1504,7 @@
             <div class="footer-bottom">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <p class="mb-0">&copy; 2026 Institut. Tous droits réservés.</p>
+                        <p class="mb-0">&copy; 2026 IUP MILENA. Tous droits réservés.</p>
                     </div>
                 </div>
             </div>
@@ -1459,6 +1513,8 @@
 
     <!-- Bootstrap JS -->
     <script src="../../cdn.jsdelivr.net/npm/bootstrap%405.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
         // Navbar scroll effect
@@ -1505,9 +1561,37 @@
                 closeSearch();
             }
         });
+
+        // Initialize Swiper for Formations
+        const formationsSwiper = new Swiper('.formations-slider', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                }
+            }
+        });
     </script>
 </body>
 
 
 <!-- Mirrored from linergroup.tech/milena/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Feb 2026 07:09:01 GMT -->
+
 </html>

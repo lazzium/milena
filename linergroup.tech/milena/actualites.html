@@ -3,6 +3,7 @@
 
 
 <!-- Mirrored from linergroup.tech/milena/actualites.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Feb 2026 07:10:18 GMT -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -134,12 +135,12 @@
             border-radius: 10px;
             font-weight: 700;
             transition: all 0.3s ease-in-out;
-            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+            box-shadow: none;
         }
 
         .btn-admission:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(255, 107, 53, 0.5);
+            box-shadow: none;
         }
 
         /* Hero */
@@ -351,6 +352,47 @@
         footer a:hover {
             color: var(--orange-color);
         }
+    
+        /* Newsletter Form Styles */
+        .newsletter-form {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.9rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--white-color);
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-form input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .newsletter-form button {
+            padding: 0.9rem 2rem;
+            background: linear-gradient(135deg, var(--orange-color), #ff8c5a);
+            border: none;
+            border-radius: 50px;
+            color: var(--white-color);
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+        }
+
     </style>
 </head>
 
@@ -381,18 +423,25 @@
                             Formations
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="formation1.html">Technologies Numériques (TSN)</a></li>
-                            <li><a class="dropdown-item" href="formation2.html">Environnement & Durable (IEDD)</a></li>
-                            <li><a class="dropdown-item" href="formation3.html">Bâtiments & Construction (IBC)</a></li>
-                            <li><a class="dropdown-item" href="formation4.html">Agrobusiness (AIC)</a></li>
-                            <li><a class="dropdown-item" href="formation5.html">Logistique & Transport (LTES)</a></li>
-                            <li><a class="dropdown-item" href="formation6.html">Artisanat & Art (IAA)</a></li>
-                            <li><a class="dropdown-item" href="formation7.html">Hôtellerie & Tourisme (HRE)</a></li>
+                            <li><a class="dropdown-item" href="formation1.html">TSN : Technologies & Solutions
+                                    Numériques</a></li>
+                            <li><a class="dropdown-item" href="formation2.html">IEDD : Ingénierie de l'Environnement et
+                                    Développement Durable</a></li>
+                            <li><a class="dropdown-item" href="formation3.html">IBC : Ingénierie de Bâtiments et
+                                    Construction</a></li>
+                            <li><a class="dropdown-item" href="formation4.html">AIC : Agrobusiness et Ingénierie
+                                    Coopérative</a></li>
+                            <li><a class="dropdown-item" href="formation5.html">LTES : Logistique, Transport et Économie
+                                    des Services</a></li>
+                            <li><a class="dropdown-item" href="formation6.html">IAA : Industrie Artisanale et
+                                    Artistique</a></li>
+                            <li><a class="dropdown-item" href="formation7.html">HRE : Hôtellerie, Restauration et
+                                    Écotourisme</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link active" href="actualites.html">Actualités</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="vie-etudiant.html">Vie étudiante</a>
                     </li>
@@ -418,7 +467,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h1>Actualités & Événements</h1>
+                    <h1>Actualités & événements.</h1>
                     <p>Découvrez ce qui se passe sur le campus MILENA</p>
                 </div>
             </div>
@@ -436,7 +485,7 @@
                 <div class="featured-overlay">
                     <div class="featured-content">
                         <span class="badge bg-warning text-dark mb-3">À la Une</span>
-                        <h2 class="display-5 fw-bold mb-3">La Rentrée Solennelle 2026 : Sous le signe de l'excellence
+                        <h2 class="display-5 fw-bold mb-3">La rentrée solennelle 2026 : sous le signe de l'excellence.
                         </h2>
                         <p class="lead mb-4">Retour sur une journée mémorable marquant le début de l'année académique.
                             Discours inspirants, accueil des nouveaux étudiants et présentation des défis de l'année.
@@ -477,7 +526,7 @@
                         </div>
                         <div class="news-content">
                             <span class="news-date"><i class="bi bi-calendar2 me-2"></i>15 Janvier 2026</span>
-                            <h3 class="news-title">Hackathon "Green Tech Africa" : Nos étudiants brillent</h3>
+                            <h3 class="news-title">Hackathon "Green Tech Africa" : nos étudiants brillent.</h3>
                             <p class="news-excerpt">L'équipe MILENA a remporté le 2ème prix lors du hackathon régional
                                 avec leur solution innovante pour l'agriculture connectée.</p>
                             <a href="lireplus.html" class="news-link">Lire la suite <i
@@ -496,7 +545,7 @@
                         </div>
                         <div class="news-content">
                             <span class="news-date"><i class="bi bi-calendar2 me-2"></i>10 Janvier 2026</span>
-                            <h3 class="news-title">Nouveau partenariat avec l'Université Technique de Munich</h3>
+                            <h3 class="news-title">Nouveau partenariat avec l'université technique de Munich.</h3>
                             <p class="news-excerpt">Un accord d'échange d'étudiants et de collaboration de recherche a
                                 été signé ce matin pour la filière Ingénierie.</p>
                             <a href="lireplus.html" class="news-link">Lire la suite <i
@@ -515,7 +564,7 @@
                         </div>
                         <div class="news-content">
                             <span class="news-date"><i class="bi bi-calendar2 me-2"></i>22 Décembre 2025</span>
-                            <h3 class="news-title">Ouverture du nouveau foyer étudiant</h3>
+                            <h3 class="news-title">Ouverture du nouveau foyer étudiant.</h3>
                             <p class="news-excerpt">Les nouvelles installations de logement sont désormais accessibles,
                                 offrant confort et modernité à nos résidents.</p>
                             <a href="lireplus.html" class="news-link">Lire la suite <i
@@ -534,7 +583,7 @@
                         </div>
                         <div class="news-content">
                             <span class="news-date"><i class="bi bi-calendar2 me-2"></i>15 Décembre 2025</span>
-                            <h3 class="news-title">Inauguration du Laboratoire IOT</h3>
+                            <h3 class="news-title">Inauguration du laboratoire IOT.</h3>
                             <p class="news-excerpt">Équipé des dernières technologies, ce fablab permettra aux étudiants
                                 de prototyper leurs inventions en temps réel.</p>
                             <a href="lireplus.html" class="news-link">Lire la suite <i
@@ -553,7 +602,7 @@
                         </div>
                         <div class="news-content">
                             <span class="news-date"><i class="bi bi-calendar2 me-2"></i>05 Décembre 2025</span>
-                            <h3 class="news-title">Portrait : Marie, CEO de "BeninTech"</h3>
+                            <h3 class="news-title">Portrait : Marie, CEO de "BeninTech".</h3>
                             <p class="news-excerpt">Ancienne étudiante de la promotion 2023, Marie dirige aujourd'hui
                                 une startup florissante de 50 employés.</p>
                             <a href="lireplus.html" class="news-link">Lire la suite <i
@@ -572,7 +621,7 @@
                         </div>
                         <div class="news-content">
                             <span class="news-date"><i class="bi bi-calendar2 me-2"></i>01 Décembre 2025</span>
-                            <h3 class="news-title">Tournoi Universitaire : Victoire !</h3>
+                            <h3 class="news-title">Tournoi universitaire : victoire !.</h3>
                             <p class="news-excerpt">L'équipe de basket-ball de l'IUP MILENA remporte la finale du
                                 championnat universitaire national.</p>
                             <a href="lireplus.html" class="news-link">Lire la suite <i
@@ -609,7 +658,7 @@
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-lg-8">
-                    <h2 class="fw-bold mb-4" style="color: var(--blue-dark);">Restez connecté</h2>
+                    <h2 class="fw-bold mb-4" style="color: var(--blue-dark);">Restez connecté.</h2>
                     <p class="lead mb-5 text-muted">Abonnez-vous à notre newsletter pour recevoir les dernières
                         actualités et invitations aux événements.</p>
 
@@ -628,8 +677,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <h5>IUP MILENA</h5>
-                    <p>Millénium pour le Leadership et l’Entreprenariat en Afrique. Former des bâtisseurs pour l'avenir.
+                    <h5>IUP MILENA.</h5>
+                    <p>IUP MILENA, Former des leaders, des entrepreneurs et des innovateurs pour l’Afrique 
                     </p>
                     <div class="social-links mt-4">
                         <a href="#"><i class="bi bi-facebook"></i></a>
@@ -638,13 +687,13 @@
                         <a href="#"><i class="bi bi-instagram"></i></a>
                     </div>
                     <div class="mt-3 text-white-50">
-                        <p class="mb-1"><i class="bi bi-geo-alt me-2"></i>Abomey-Calavi, Zopah / Tankpè</p>
-                        <p class="mb-1"><i class="bi bi-telephone me-2"></i>+229 95 73 39 72</p>
-                        <p class="mb-1"><i class="bi bi-envelope me-2"></i>contact@iup-milena.bj</p>
+                        <p class="mb-1"><i class="bi bi-geo-alt me-2"></i><a href="https://maps.app.goo.gl/u5kUjBPr3KWrajK37" target="_blank" style="color: inherit; text-decoration: none;">Abomey-Calavi, Zopah / Tankpè</a></p>
+                        <p class="mb-1"><i class="bi bi-telephone me-2"></i>+229 01 90 62 62 84</p>
+                        <p class="mb-1"><i class="bi bi-envelope me-2"></i>iup.milena.itisa@gmail.com</p>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>L'Institut</h5>
+                    <h5>L'institut.</h5>
                     <ul class="list-unstyled">
                         <li><a href="index-2.html">Accueil</a></li>
                         <li><a href="apropos.html">À propos (ITISA)</a></li>
@@ -652,7 +701,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
-                    <h5>Services</h5>
+                    <h5>Services.</h5>
                     <ul class="list-unstyled">
                         <li><a href="vie-etudiant.html">Vie étudiante</a></li>
                         <li><a href="contacts.html">Contacts</a></li>
@@ -660,8 +709,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-4 mb-4">
-                    <h5>Newsletter</h5>
-                    <p>Restez informé de nos dernières actualités</p>
+                    <h5>Restez informé(e) de nos dernières actualités.</h5>
                     <form class="newsletter-form">
                         <input type="email" placeholder="Votre email">
                         <button type="submit">S'abonner</button>
@@ -671,7 +719,7 @@
             <div class="footer-bottom">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <p class="mb-0">&copy; 2026 Institut. Tous droits réservés.</p>
+                        <p class="mb-0">&copy; 2026 IUP MILENA. Tous droits réservés.</p>
                     </div>
                 </div>
             </div>
@@ -712,4 +760,5 @@
 
 
 <!-- Mirrored from linergroup.tech/milena/actualites.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Feb 2026 07:10:20 GMT -->
+
 </html>

@@ -148,7 +148,7 @@ body {
     border-radius: 10px;
     font-weight: 700;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+    box-shadow: none;
 }
 
 .btn-admission:hover {
@@ -156,7 +156,7 @@ body {
     /* Reset from previous rule if needed, handled by gradient below */
     background: linear-gradient(135deg, #ff8c5a, var(--orange-color));
     transform: translateY(-2px);
-    box-shadow: 0 6px 25px rgba(255, 107, 53, 0.4);
+    box-shadow: none;
 }
 
 /* --- Search Overlay --- */
