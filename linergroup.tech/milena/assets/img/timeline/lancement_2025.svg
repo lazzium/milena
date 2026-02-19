@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky)" />
+  <!-- Building Silhouette -->
+  <path d="M200 400 L200 150 L350 100 L500 150 L500 400 Z" fill="#253E86" />
+  <rect x="250" y="200" width="40" height="40" fill="#add8e6" />
+  <rect x="330" y="200" width="40" height="40" fill="#add8e6" />
+  <rect x="410" y="200" width="40" height="40" fill="#add8e6" />
+  <rect x="250" y="280" width="40" height="40" fill="#add8e6" />
+  <rect x="330" y="280" width="40" height="40" fill="#add8e6" />
+  <rect x="410" y="280" width="40" height="40" fill="#add8e6" />
+  
+  <!-- Ribbon or Celebration -->
+  <path d="M150 400 Q400 300 650 400" stroke="#E65125" stroke-width="10" fill="none" />
+  
+  <text x="400" y="450" font-family="'Poppins', sans-serif" font-weight="bold" font-size="32" fill="#253E86" text-anchor="middle" letter-spacing="2">LANCEMENT 2025</text>
+</svg>

@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap');
 
 :root {
-    --blue-color: #0091d3;
-    --orange-color: #ff6b35;
+    --blue-color: #253E86;
+    --orange-color: #E65125;
     --white-color: #ffffff;
-    --dark-blue: #1f485e;
+    --dark-blue: #253E86;
 }
 
 * {
@@ -1105,4 +1105,115 @@ footer ul li a:hover {
         text-align: center;
         padding: 1rem;
     }
+}
+
+/* --- Footer Styles --- */
+footer {
+    background-color: var(--dark-blue);
+    color: var(--white-color);
+    padding: 80px 0 30px;
+}
+
+footer h5 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--white-color);
+    font-size: 1.3rem;
+}
+
+footer p {
+    color: var(--white-color);
+    line-height: 1.8;
+}
+
+footer .social-links {
+    display: flex;
+}
+
+footer .social-links a {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.8rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    background: linear-gradient(135deg, var(--blue-color), var(--orange-color));
+    transform: translateY(-5px);
+}
+
+footer .social-links a i {
+    font-size: 1.3rem;
+    color: var(--white-color);
+}
+
+footer ul li {
+    margin-bottom: 0.8rem;
+}
+
+footer ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+footer ul li a:hover {
+    color: var(--orange-color);
+    transform: translateX(5px);
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.9rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white-color);
+    transition: all 0.3s ease;
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.newsletter-form input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 4px rgba(0, 145, 211, 0.2);
+}
+
+.newsletter-form button {
+    padding: 0.9rem 2rem;
+    border: none;
+    border-radius: 50px;
+    color: var(--white-color);
+    background: linear-gradient(135deg, var(--blue-color), var(--orange-color));
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.newsletter-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(230, 81, 37, 0.3);
+}
+
+.footer-bottom {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
 }

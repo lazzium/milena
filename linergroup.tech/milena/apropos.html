@@ -192,6 +192,8 @@
             overflow: hidden;
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 145, 211, 0.25);
+            aspect-ratio: 4/3;
+            /* Assure une taille uniforme */
         }
 
         .image-wrapper::before {
@@ -209,6 +211,8 @@
 
         .image-wrapper img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
             border-radius: 20px;
             transition: transform 0.5s ease;
         }
@@ -594,6 +598,59 @@
                 font-size: 1.5rem;
             }
         }
+
+        /* Footer */
+        footer {
+            background: var(--blue-color);
+            color: white;
+            padding: 80px 0 30px;
+        }
+
+        footer h5 {
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-size: 1.3rem;
+        }
+
+        footer p {
+            color: white;
+            line-height: 1.8;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        footer ul li a:hover {
+            color: var(--orange-color);
+        }
+
+        .newsletter-form input {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 0.9rem 1.5rem;
+        }
+
+        .newsletter-form button {
+            background: linear-gradient(135deg, var(--orange-color), #ff8c5a);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 0.9rem 2rem;
+            font-weight: 700;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 4rem;
+            padding-top: 2rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
     </style>
 </head>
 
@@ -722,7 +779,7 @@
                 </div>
                 <div class="col-lg-6 order-lg-1 fade-in">
                     <div class="image-wrapper">
-                        <img src="assets/img/Acceuil.jpg" alt="Mission Institut" class="img-fluid">
+                        <img src="assets/img/mission_new.png" alt="Mission Institut" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -740,8 +797,8 @@
             <div class="timeline-gallery">
                 <!-- Carte 2018 - Vision -->
                 <div class="timeline-card" onclick="openTimelineModal('2015_1')">
-                    <img src="C:/Users/HP/.gemini/antigravity/brain/4061f8b4-a2b5-4f8c-b15c-ec26d6b45bb4/timeline_2018_vision_1768907924733.png"
-                        alt="2015 - Naissance de la Vision" class="timeline-card-image">
+                    <img src="assets/img/timeline/vision_2015.svg" alt="2015 - Naissance de la Vision"
+                        class="timeline-card-image">
                     <div class="timeline-card-content">
                         <span class="timeline-year">2015</span>
                         <h3 class="timeline-title">Naissance de la vision.</h3>
@@ -752,8 +809,8 @@
 
                 <!-- Carte 2020 - ITISA -->
                 <div class="timeline-card" onclick="openTimelineModal('2015_2')">
-                    <img src="C:/Users/HP/.gemini/antigravity/brain/4061f8b4-a2b5-4f8c-b15c-ec26d6b45bb4/timeline_2020_itisa_1768907943628.png"
-                        alt="2015 - Fondation ITISA" class="timeline-card-image">
+                    <img src="assets/img/timeline/itisa_2015.svg" alt="2015 - Fondation ITISA"
+                        class="timeline-card-image">
                     <div class="timeline-card-content">
                         <span class="timeline-year">2015</span>
                         <h3 class="timeline-title">Création de la fondation ITISA.</h3>
@@ -764,8 +821,8 @@
 
                 <!-- Carte 2021 - DRIVEn -->
                 <div class="timeline-card" onclick="openTimelineModal('2021')">
-                    <img src="C:/Users/HP/.gemini/antigravity/brain/4061f8b4-a2b5-4f8c-b15c-ec26d6b45bb4/timeline_2021_driven_1768907959592.png"
-                        alt="2021 - Modèle DRIVEn" class="timeline-card-image">
+                    <img src="assets/img/timeline/driven_2021.svg" alt="2021 - Modèle DRIVEn"
+                        class="timeline-card-image">
                     <div class="timeline-card-content">
                         <span class="timeline-year">2021</span>
                         <h3 class="timeline-title">Développement du modèle DRIVEn.</h3>
@@ -776,8 +833,8 @@
 
                 <!-- Carte 2022 - Filières -->
                 <div class="timeline-card" onclick="openTimelineModal('2023')">
-                    <img src="C:/Users/HP/.gemini/antigravity/brain/4061f8b4-a2b5-4f8c-b15c-ec26d6b45bb4/timeline_2022_filieres_1768907977875.png"
-                        alt="2023 - 7 Filières" class="timeline-card-image">
+                    <img src="assets/img/timeline/filieres_2023.svg" alt="2023 - 7 Filières"
+                        class="timeline-card-image">
                     <div class="timeline-card-content">
                         <span class="timeline-year">2023</span>
                         <h3 class="timeline-title">Définition des 7 filières.</h3>
@@ -788,8 +845,8 @@
 
                 <!-- Carte 2023 - Partenariats -->
                 <div class="timeline-card" onclick="openTimelineModal('2024')">
-                    <img src="C:/Users/HP/.gemini/antigravity/brain/4061f8b4-a2b5-4f8c-b15c-ec26d6b45bb4/timeline_2023_partnerships_1768907991938.png"
-                        alt="2024 - Partenariats" class="timeline-card-image">
+                    <img src="assets/img/timeline/partenariats_2024.svg" alt="2024 - Partenariats"
+                        class="timeline-card-image">
                     <div class="timeline-card-content">
                         <span class="timeline-year">2024</span>
                         <h3 class="timeline-title">Partenariats avec les entreprises.</h3>
@@ -800,8 +857,8 @@
 
                 <!-- Carte 2025 - Lancement -->
                 <div class="timeline-card" onclick="openTimelineModal('2025')">
-                    <img src="C:/Users/HP/.gemini/antigravity/brain/4061f8b4-a2b5-4f8c-b15c-ec26d6b45bb4/timeline_2025_launch_1768908008737.png"
-                        alt="2025 - Lancement" class="timeline-card-image">
+                    <img src="assets/img/timeline/lancement_2025.svg" alt="2025 - Lancement"
+                        class="timeline-card-image">
                     <div class="timeline-card-content">
                         <span class="timeline-year">2025</span>
                         <h3 class="timeline-title">Lancement imminent.</h3>
@@ -906,16 +963,11 @@
                     <h5>IUP MILENA.</h5>
                     <p>IUP MILENA, Former des leaders, des entrepreneurs et des innovateurs pour l’Afrique
                     </p>
-                    <div class="social-links mt-4">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-twitter"></i></a>
-                        <a href="#"><i class="bi bi-linkedin"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                    </div>
-                    <div class="mt-3 text-white-50">
+
+                    <div class="mt-3 ">
                         <p class="mb-1"><i class="bi bi-geo-alt me-2"></i><a
                                 href="https://maps.app.goo.gl/u5kUjBPr3KWrajK37" target="_blank"
-                                style="color: inherit; text-decoration: none;">Abomey-Calavi, Zopah / Tankpè</a></p>
+                                style="color: inherit; text-decoration: none;">Abomey-Calavi, Zopah / Tankpè</a>.</p>
                         <p class="mb-1"><i class="bi bi-telephone me-2"></i>+229 01 90 62 62 84</p>
                         <p class="mb-1"><i class="bi bi-envelope me-2"></i>iup.milena.itisa@gmail.com</p>
                     </div>
@@ -925,7 +977,7 @@
                     <ul class="list-unstyled">
                         <li><a href="index-2.html">Accueil</a></li>
                         <li><a href="apropos.html">À propos (ITISA)</a></li>
-                        <li><a href="#">Nos Formations</a></li>
+                        <li><a href="#">Nos formations</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6 mb-4">
@@ -1008,7 +1060,7 @@
             '2015_1': {
                 year: '2015',
                 title: 'Naissance de la vision.',
-                image: 'C:/Users/HP/.gemini/antigravity/brain/4061f8b4-a2b5-4f8c-b15c-ec26d6b45bb4/timeline_2018_vision_1768907924733.png',
+                image: 'assets/img/timeline/vision_2015.svg',
                 description: `<p><strong>Le constat :</strong> L'Afrique subsaharienne fait face à une crise majeure de l'employabilité des jeunes. Des millions de diplômés se retrouvent sans emploi, faute de compétences pratiques alignées avec les besoins réels des entreprises.</p>
                     <p><strong>La solution :</strong> Inspiré du modèle dual allemand qui a fait ses preuves depuis plus d'un siècle, nous avons conçu un système innovant adapté au contexte africain. L'objectif : former des jeunes qui ont à la fois l'excellence académique et l'expérience professionnelle dès la fin de leurs études.</p>
                     <p><strong>La vision MILENA était née :</strong> Transformer l'éducation supérieure en Afrique en créant une nouvelle génération de leaders et entrepreneurs capables de bâtir le continent de demain.</p>`
@@ -1016,7 +1068,7 @@
             '2015_2': {
                 year: '2015',
                 title: 'Création de la fondation ITISA.',
-                image: 'C:/Users/HP/.gemini/antigravity/brain/4061f8b4-a2b5-4f8c-b15c-ec26d6b45bb4/timeline_2020_itisa_1768907943628.png',
+                image: 'assets/img/timeline/itisa_2015.svg',
                 description: `<p><strong>Fondation ITISA : Fondation pour l'Impulsion les Transformations et les Innovations Sociales en Afrique</strong></p>
                     <p>Pour porter la vision MILENA, nous avons créé la Fondation ITISA, une organisation dédiée à la transformation de l'éducation en Afrique. La fondation a pour mission de :</p>
                     <ul>
@@ -1030,7 +1082,7 @@
             '2021': {
                 year: '2021',
                 title: 'Développement du modèle DRIVEn.',
-                image: 'C:/Users/HP/.gemini/antigravity/brain/4061f8b4-a2b5-4f8c-b15c-ec26d6b45bb4/timeline_2021_driven_1768907959592.png',
+                image: 'assets/img/timeline/driven_2021.svg',
                 description: `<p><strong>La pédagogie DRIVEn représente notre approche unique de formation :</strong></p>
                     <p><strong>D</strong>éprogrammation - Se libérer des blocages mentaux et des limitations auto-imposées.</p>
                     <p><strong>R</strong>eprogrammation - Adopter un nouvel état d'esprit orienté vers la réussite et l'action.</p>
@@ -1043,7 +1095,7 @@
             '2023': {
                 year: '2023',
                 title: 'Définition des 7 filières stratégiques.',
-                image: 'C:/Users/HP/.gemini/antigravity/brain/4061f8b4-a2b5-4f8c-b15c-ec26d6b45bb4/timeline_2022_filieres_1768907977875.png',
+                image: 'assets/img/timeline/filieres_2023.svg',
                 description: `<p><strong>7 filières alignées avec les besoins du marché africain :</strong></p>
                     <ol>
                         <li><strong>TSN : Technologies & Solutions Numériques</strong> - Développement logiciel, cybersécurité, data science, IA</li>
@@ -1059,7 +1111,7 @@
             '2024': {
                 year: '2024',
                 title: 'Partenariats avec les entreprises.',
-                image: 'C:/Users/HP/.gemini/antigravity/brain/4061f8b4-a2b5-4f8c-b15c-ec26d6b45bb4/timeline_2023_partnerships_1768907991938.png',
+                image: 'assets/img/timeline/partenariats_2024.svg',
                 description: `<p><strong>Constitution d'un écosystème d'entreprises partenaires</strong></p>
                     <p>Le succès du modèle dual repose sur des partenariats solides avec le monde professionnel. En 2023, nous avons tissé des liens stratégiques avec :</p>
                     <ul>
@@ -1074,7 +1126,7 @@
             '2025': {
                 year: '2025',
                 title: 'Lancement imminent - l\'avenir commence maintenant.',
-                image: 'C:/Users/HP/.gemini/antigravity/brain/4061f8b4-a2b5-4f8c-b15c-ec26d6b45bb4/timeline_2025_launch_1768908008737.png',
+                image: 'assets/img/timeline/lancement_2025.svg',
                 description: `<p><strong>Abomey-Calavi, Zopah/Tankpè - Le Campus de l'Excellence</strong></p>
                     <p>Après des années de préparation, de conception et de partenariats, l'IUP MILENA est prêt à ouvrir ses portes !</p>
                     <p><strong>Les infrastructures :</strong></p>
